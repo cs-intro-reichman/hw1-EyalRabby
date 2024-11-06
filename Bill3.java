@@ -7,9 +7,8 @@ public class Bill3 {
 		String name3 = args[2];
 		int sum = Integer.parseInt(args[3]);
 
-		double divided = sum / 3;
-		Math.ceil(divided);
+		double divided = sum / 3.0;
 
-		System.out.println("Dear " + name1  + ", " + name2 + " and " + name3 + ": pay " + divided + " Shekels each.");
+		System.out.println("Dear " + name1  + ", " + name2 + " and " + name3 + ": pay " + Math.ceil(divided) + " Shekels each.");
 	}
 }
